@@ -43,6 +43,7 @@ def game(number_rounds)
     while ($p_score + $c_score) < number_rounds
         play_round(player_play, computer_play)
     end
+    
     if $p_score > $c_score
         puts "You Win the game! Final Score -> You: #{$p_score} - Computer #{$c_score}."
     else
